@@ -163,10 +163,23 @@
     left: -35px;
     content: "✖";
 }
+.parallax { 
+    /* The image used */
+    background-image: url("/*add an image here*/");
 
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fit;
+}
 </style>
 </head>
 <body>
+<div class="parallax">
 <div class="header">
 <h1 align="center">My WebPage</h1>
 </div>

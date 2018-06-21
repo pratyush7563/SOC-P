@@ -189,7 +189,7 @@
 </div>
 <div class="navibar">
 <h3 align="center" style="font-size:20px;">"Have you been pressed by social norms and feel abnormal about the attitude it has towards you??"</h3>
-<p align="center" style="font-size:20px;"><b>Are you feeling stressed ??</b> <br><b>Are you feeling lonely??</b><br><b>Fed-up with your life??....</b></p>
+<p align="center" style="font-size:20px;"><b>Are you feeling stressed ??</b> <br><b>Are you feeling lonely??</b><br><b>Fed-up with your life??....</b><b>Can u see someone around u stressed??</b><br><b>Are you a parent concerned about ur children's mental well being??</b><br></p>
 </div>
 
 <div class="footer">

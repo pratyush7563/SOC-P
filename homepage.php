@@ -38,7 +38,8 @@
   
   .header{
     padding:40px;
-	background-image:url('home.jpg');
+	background-image:url('nice.jpg');
+	background-image:url('nice.jpg');
 	background-repeat:no-repeat;
 	background-size:100% 180px;
   }
@@ -163,23 +164,12 @@
     left: -35px;
     content: "✖";
 }
-.parallax { 
-    /* The image used */
-    background-image: url("/*add an image here*/");
 
-    /* Set a specific height */
-    height: 500px; 
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: fit;
-}
+
 </style>
 </head>
 <body>
-<div class="parallax">
 <div class="header">
 <h1 align="center">My WebPage</h1>
 </div>
@@ -189,7 +179,7 @@
 </div>
 <div class="navibar">
 <h3 align="center" style="font-size:20px;">"Have you been pressed by social norms and feel abnormal about the attitude it has towards you??"</h3>
-<p align="center" style="font-size:20px;"><b>Are you feeling stressed ??</b> <br><b>Are you feeling lonely??</b><br><b>Fed-up with your life??....</b><b>Can u see someone around u stressed??</b><br><b>Are you a parent concerned about ur children's mental well being??</b><br></p>
+<p align="center" style="font-size:20px;"><b>Are you feeling stressed ??</b> <br><b>Are you feeling lonely??</b><br><b>Fed-up with your life??....</b></p>
 </div>
 
 <div class="footer">
@@ -347,7 +337,26 @@ function myFunction()
 	
 }
  </script>
- 
+ <label for="pass-repeat"><b>Repeat Password</b><br>
+      <input type="password" placeholder="Repeat Password" id="repas" name="password-repeat" required onkeyup ='check();'/><br><br>
+	  <span id="message"></span> 
+	  </label>
+	  <script>
+	  var check=function ()
+	  {
+		  if(document.getElementById("pas").value==document.getElementById("repas").value)
+		  {
+			  document.getElementById("message").innerHTML="✔";
+			  document.getElementById("message").style.color="green";
+		  }
+		  else
+		  {
+			  document.getElementById("message").innerHTML="✖";
+			  document.getElementById("message").style.color="red";
+		  }
+	  }
+	  </script>
+	  
  <div align="center" class="g-recaptcha" data-sitekey="6LfTBF8UAAAAALzMeAHb1Zp_Styckvt9HCGgQ8qx" required></div><br><br>
 
 

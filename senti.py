@@ -66,7 +66,7 @@ class DictionaryTagger(object):
                     self.dictionary[key].extend(curr_dict[key])
                 else:
                     self.dictionary[key] = curr_dict[key]
-                    self.max_key_size = max(self.max_key_size, len(key))
+                    self.max_key_size = max(self.max_key_size, len(curr_dict))
 
     def tag(self, postagged_sentences):
         return [self.tag_sentence(sentence) for sentence in postagged_sentences]
@@ -150,10 +150,8 @@ if __name__ == "__main__":
                                     'dicts/inc.yml', 'dicts/dec.yml', 'dicts/inv.yml'])
 
     splitted_sentences = splitter.split(text)
-    pprint(splitted_sentences)
 
     pos_tagged_sentences = postagger.pos_tag(splitted_sentences)
-    pprint(pos_tagged_sentences)
 
     dict_tagged_sentences = dicttagger.tag(pos_tagged_sentences)
     pprint(dict_tagged_sentences)

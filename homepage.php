@@ -5,6 +5,12 @@
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <title>HomePage</title>
 <style>
+.mi{
+	background-image:url('image.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-position :fixed;
+}
 .butt
 {
 	background-color: #4CAF50;
@@ -37,11 +43,13 @@
   }
   
   .header{
-    padding:40px;
-	background-image:url('nice.jpg');
-	background-image:url('nice.jpg');
-	background-repeat:no-repeat;
-	background-size:100% 180px;
+	 
+    padding:0px;
+	font-family:Comic Sans MS;
+	font-size:40px;
+	color:#E14929;
+
+	text-shadow: 3px 3px black;
   }
   .navbar
   {
@@ -164,15 +172,95 @@
     left: -35px;
     content: "✖";
 }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
 
 
 </style>
 </head>
 <body>
 <div class="header">
-<h1 align="center">My WebPage</h1>
+ <p><img src="down.jpg" style="width:200px; height:200px;" alt="image"><b style="font-size:80px; position: relative;
+      bottom: 60px;">S</b><b style=" position: relative;
+      bottom: 60px;">hare</b>
+ <b style="font-size:60px; position: relative;
+      bottom: 60px;">& </b> <b style="font-size:80px; position: relative;
+      bottom: 60px;">S</b><b style=" position: relative;
+      bottom: 60px;">olve</b></p>
 </div>
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<div class="mi">
 <div class="navbar">
 <h2 align="center"  style="font-size:25px;">"Man-A social animal takes from society what it offers</h2>
 <h2 align="center" >All what it offers ain't good "</h2>
@@ -198,7 +286,7 @@
 &nbsp &nbsp &nbsp &nbsp <button value="SignUp" class="butt" onclick="document.getElementById('gotto').style.display='block'">SignUp</button><br><br>
 
 
-      <button type="button" class="but" align="center" onclick="document.getElementById('sign').style.display='none'" class="cancelbtn">Cancel</button><br><br>
+      <button type="reset" class="but" align="center" onclick="document.getElementById('sign').style.display='none'" class="cancelbtn">Cancel</button><br><br>
 
     
 </div>
@@ -227,21 +315,38 @@
 <input type="password"  placeholder="Enter Password" class="input" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
 
-<input type="checkbox" onclick="myFunction()">Show Password<br><br>
+<button type="button" onclick="showHide()" id="eye">
+            <img src="eye.png" alt="eye"/>
+         </button>
 <script>
-function myFunction()
+function show()
 {
-	var x=document.getElementById("password");
-	
-		if(x.type===password)
-		{
-			x.type=text;
-		}
-		else
-		{
-			x.type=password;
-		}
-	
+var p = document.getElementById('password');
+p.setAttribute('type','text');  
+}
+
+function hide()
+{
+   var p = document.getElementById('password');
+p.setAttribute('type','password');   
+}
+
+function showHide()
+{
+    var pwShown = 0;
+
+document.getElementById("eye").addEventListener("click", function() {
+    if (pwShown == 0) 
+    {
+        pwShown = 1; 
+        show();
+    } 
+    else {
+        pwShow = 0;
+        hide();
+    }
+            }, false);
+
 }
 </script>
 
@@ -259,7 +364,7 @@ function myFunction()
       </label>
 	  
 <div class="container" >
-      <button type="button" class="but" onclick="document.getElementById('wrapper').style.display='none'" class="cancelbtn">Cancel</button><br><br>
+      <button type="reset" class="but" onclick="document.getElementById('wrapper').style.display='none'" class="cancelbtn">Cancel</button><br><br>
 
     </div>
 
@@ -320,7 +425,7 @@ function CheckCaptcha($userResponse) {
 <input type="password"  placeholder="Enter Password" class="input" name="pas" id="pas" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
  
- <input type="checkbox" onclick="myFunction()">Show Password<br><br>
+ <input type="checkbox" onchange="myFunction()">Show Password<br><br>
 <script>
 function myFunction()
 {
@@ -338,8 +443,8 @@ function myFunction()
 }
  </script>
  <label for="pass-repeat"><b>Repeat Password</b><br>
-      <input type="password" placeholder="Repeat Password" id="repas" name="password-repeat" required onkeyup ='check();'/><br><br>
-	  <span id="message"></span> 
+      <input type="password" placeholder="Repeat Password" id="repas" name="password-repeat" required onkeyup ='check();'/>&nbsp
+	  <span id="message">hju</span><br><br> 
 	  </label>
 	  <script>
 	  var check=function ()
@@ -371,7 +476,7 @@ function myFunction()
       </label>-->
 	  
 <div class="container" >
-      <button type="button" class="but" onclick="document.getElementById('gotto').style.display='none'" class="cancelbtn">Cancel</button><br><br>
+      <button type="reset" class="but" onclick="document.getElementById('gotto').style.display='none'" class="cancelbtn">Cancel</button><br><br>
 
     </div>
 
@@ -443,5 +548,6 @@ window.onclick = function(event) {
 }
 
 </script>
+</div>
 </body>
 </html>

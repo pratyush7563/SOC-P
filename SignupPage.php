@@ -25,7 +25,7 @@
      font-size:15px;
   }
 .modal {
-    display: none; /* Hidden by default */
+   
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -36,14 +36,15 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     padding-top: 5px;
+	overflow:scroll;
 }
   /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 10% auto 20% auto; /* 10% from the top, 20% from the bottom and centered */
+    margin: 2% auto 2% auto; /* 10% from the top, 20% from the bottom and centered */
     border: 10px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */
-	padding:20px 20px;
+    width: 60%; /* Could be more or less, depending on screen size */
+	padding:40px 160px;
 }
 .input
 {
@@ -119,7 +120,7 @@ title="Must contain at least one number and one uppercase and lowercase letter, 
 </script>
  <label for="pass-repeat"><b><span style="color:red;">*</span>Confirm Password -</b><br>
       <input type="password" placeholder="Confirm Password" class="input" id="repas" name="password-repeat"  onkeyup ='check();' required />&nbsp
-	  <span id="Message">hju</span><br><br> 
+	  <span id="Message"></span><br><br> 
 	  </label>
 	  
 	  
@@ -127,7 +128,7 @@ title="Must contain at least one number and one uppercase and lowercase letter, 
 
 
 
-<button class="but" style="background-color:#008000;" type="submit" value="submit" align="right" onclick="check-question.html">Submit</button><br><br>
+
 </div>
 
 <!--<label>
@@ -135,9 +136,19 @@ title="Must contain at least one number and one uppercase and lowercase letter, 
 		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
 		<span class="psw">Forgot <a href="#">password?</a></span><br><br>
       </label>-->
-	  
+	<span style="color:red; font-size:20px;">Please answer these questions for your security purpose-</span><br><br>
+ <b> Date of Birth-:</b><br>
+<input type="date"  class="input" id="date" name="date" required /><br><br>
+ <b>What is your favourite color ? </b><br>
+&nbsp <input type="text" class="input" id="color" name="color" required><br><br>
+ <b>In which city were you born?</b><br>
+&nbsp <input type="text" class="input" id="city" name="city" required><br><br>  
+
+
+
+<button class="but" style="background-color:#008000;" type="submit" value="submit" align="right" >Submit</button><br><br>
 <div class="container" >
-      <button type="reset" class="but" onclick="" class="cancelbtn">Cancel</button><br><br>
+      <button type="reset" class="but" onclick="homepage.php" class="cancelbtn">Cancel</button><br><br>
 
     </div>
 

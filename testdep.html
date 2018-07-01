@@ -1,0 +1,410 @@
+<html>
+<head>
+  <title>
+    TEST DEPRESSION
+  </title>
+  <style>
+  body {
+
+      background-image: linear-gradient(to top,#ffe0cc 0%,white 100%);
+      background-blend-mode: normal;
+  }
+.header{
+  animation: change 10s infinite;
+  text-align: center;
+  height:20%;
+  width:100%;
+  font-size: 30px;
+  padding-top: 0.5%;
+  font-style: oblique;
+}
+@keyframes change {
+  0%{background-color: #667d52;}
+  25%{background-color: #995299;}
+  50%{background-color: #993dff;}
+  75%{background-color: #5959ff;}
+  100%{background-color: #667d52; }
+
+}
+.questions{
+  font-size:25px;
+  font-style: oblique;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+
+
+}
+
+/* Hide the browser's default radio button */
+.container input {
+
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+.container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover input ~ .checkmark1 {
+  background-color: #2196F3;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container1 input:checked ~ .checkmark1 {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container1 input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container1 .checkmark1:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+  </style>
+</head>
+<body>
+  <div class='header'>
+    <h1> ANSWER THE FOLLOWING </h1>
+  </div><form>
+  <div class='questions'>
+  <div class='1'>
+1) Little Interest or Pleasure in doing things<span style='color:red;'>*</span>
+<br>
+  <label class='container'>Not At All
+    <input type='radio' checked='checked' name='one' value='not at all'>
+    <span class='checkmark'></span>
+  </label>
+  <label class='container'>Several Days
+    <input type='radio' name='one' value='several days'>
+    <span class='checkmark'></span>
+  </label>
+  <label class='container'>More Than Half The Days
+    <input type='radio' name='one' value='more than half the days'>
+      <span class='checkmark'></span>
+    </label>
+    <label class='container'>Nearly Everyday
+      <input type='radio' name='one' value='nearly everyday'>
+        <span class='checkmark'></span>
+      </label>
+        </div>
+    <div class='2'>
+        2) Feeling Down,Depressed or Hopeless<span style='color:red;'>*</span>
+          <br>
+          <label class='container'>Not At All
+            <input type='radio' checked='checked' name='two' value='not at all'>
+            <span class='checkmark'></span>
+          </label>
+          <label class='container'>Several Days
+            <input type='radio' name='two' value='several days'>
+            <span class='checkmark'></span>
+          </label>
+          <label class='container'>More Than Half The Days
+            <input type='radio' name='two' value='more than half the days'>
+              <span class='checkmark'></span>
+            </label>
+            <label class='container'>Nearly Everyday
+              <input type='radio' name='two' value='nearly everyday'>
+                <span class='checkmark'></span>
+              </label>
+            </div>
+            <div class='3'>
+           3)Trouble Falling or Staying Asleep, or Sleeping Too much<span style='color:red;'>*</span>
+           <br>
+           <label class='container'>Not At All
+             <input type='radio' checked='checked' name='three' value='not at all'>
+             <span class='checkmark'></span>
+           </label>
+           <label class='container'>Several Days
+             <input type='radio' name='three' value='several days'>
+             <span class='checkmark'></span>
+           </label>
+           <label class='container'>More Than Half The Days
+             <input type='radio' name='three' value='more than half the days'>
+               <span class='checkmark'></span>
+             </label>
+             <label class='container'>Nearly Everyday
+               <input type='radio' name='three' value='nearly everyday'>
+                 <span class='checkmark'></span>
+               </label>
+            </div>
+            <div class='4'>4)Feeling Tired or having little Energy<span style='color:red;'>*</span>
+              <br>
+              <label class='container'>Not At All
+                <input type='radio' checked='checked' name='four' value='not at all'>
+                <span class='checkmark'></span>
+              </label>
+              <label class='container'>Several Days
+                <input type='radio' name='four' value='several days'>
+                <span class='checkmark'></span>
+              </label>
+              <label class='container'>More Than Half The Days
+                <input type='radio' name='four' value='more than half the days'>
+                  <span class='checkmark'></span>
+                </label>
+                <label class='container'>Nearly Everyday
+                  <input type='radio' name='four' value='nearly everyday'>
+                    <span class='checkmark'></span>
+                  </label></div>
+                  <div class='5'>5)Poor appetite or Overeating<span style='color:red;'>*</span>
+                    <br>
+                    <label class='container'>Not At All
+                      <input type='radio' checked='checked' name='five' value='not at all'>
+                      <span class='checkmark'></span>
+                    </label>
+                    <label class='container'>Several Days
+                      <input type='radio' name='five' value='several days'>
+                      <span class='checkmark'></span>
+                    </label>
+                    <label class='container'>More Than Half The Days
+                      <input type='radio' name='five' value='more than half the days'>
+                        <span class='checkmark'></span>
+                      </label>
+                      <label class='container'>Nearly Everyday
+                        <input type='radio' name='five' value='nearly everyday'>
+                          <span class='checkmark'></span>
+                        </label></div>
+                        <div class='6'>6)Feeling bad about yourself- or that you are a failure or have let yourself or your family down<span style='color:red;'>*</span>
+                          <br>
+                          <label class='container'>Not At All
+                            <input type='radio' checked='checked' name='six' value='not at all'>
+                            <span class='checkmark'></span>
+                          </label>
+                          <label class='container'>Several Days
+                            <input type='radio' name='six' value='several days'>
+                            <span class='checkmark'></span>
+                          </label>
+                          <label class='container'>More Than Half The Days
+                            <input type='radio' name='six' value='more than half the days'>
+                              <span class='checkmark'></span>
+                            </label>
+                            <label class='container'>Nearly Everyday
+                              <input type='radio' name='six' value='nearly everyday'>
+                                <span class='checkmark'></span>
+                              </label></div>
+                      <div class='7'>7)Trouble concentrating on things, such as reading the newspaper or watching television<span style='color:red;'>*</span>
+                        <br>
+                        <label class='container'>Not At All
+                          <input type='radio' checked='checked' name='seven' value='not at all'>
+                          <span class='checkmark'></span>
+                        </label>
+                        <label class='container'>Several Days
+                          <input type='radio' name='seven' value='several days'>
+                          <span class='checkmark'></span>
+                        </label>
+                        <label class='container'>More Than Half The Days
+                          <input type='radio' name='seven' value='more than half the days'>
+                            <span class='checkmark'></span>
+                          </label>
+                          <label class='container'>Nearly Everyday
+                            <input type='radio' name='seven' value='nearly everyday'>
+                              <span class='checkmark'></span>
+                            </label></div>
+                        <div class='8'>8)Moving or speaking so slowly that other people could have noticed<span style='color:red;'>*</span>
+                          <br>
+                          <label class='container'>Not At All
+                            <input type='radio' checked='checked' name='eight' value='not at all'>
+                            <span class='checkmark'></span>
+                          </label>
+                          <label class='container'>Several Days
+                            <input type='radio' name='eight' value='several days'>
+                            <span class='checkmark'></span>
+                          </label>
+                          <label class='container'>More Than Half The Days
+                            <input type='radio' name='eight' value='more than half the days'>
+                              <span class='checkmark'></span>
+                            </label>
+                            <label class='container'>Nearly Everyday
+                              <input type='radio' name='eight' value='nearly everyday'>
+                                <span class='checkmark'></span>
+                              </label></div>
+                          <div class='9'>9)Thoughts that you would be better of dead, or of hurting yourself<span style='color:red;'>*</span>
+                            <br>
+                            <label class='container'>Not At All
+                              <input type='radio' checked='checked' name='nine' value='not at all'>
+                              <span class='checkmark'></span>
+                            </label>
+                            <label class='container'>Several Days
+                              <input type='radio' name='nine' value='several days'>
+                              <span class='checkmark'></span>
+                            </label>
+                            <label class='container'>More Than Half The Days
+                              <input type='radio' name='nine' value='more than half the days'>
+                                <span class='checkmark'></span>
+                              </label>
+                              <label class='container'>Nearly Everyday
+                                <input type='radio' name='nine' value='nearly everyday'>
+                                  <span class='checkmark'></span>
+                                </label></div>
+                              <div class='10'>10)If you checked off any problems, how difficult have these problems made it for you at work,home or with other people<span style='color:red;'>*</span>
+                                <br>
+                                <label class='container'>Not At All
+                                  <input type='radio' checked='checked' name='ten' value='not at all'>
+                                  <span class='checkmark'></span>
+                                </label>
+                                <label class='container'>Somewhat Difficult
+                                  <input type='radio' name='ten' value='somewhat difficult'>
+                                  <span class='checkmark'></span>
+                                </label>
+                                <label class='container'>Very Difficult
+                                  <input type='radio' name='ten' value='very difficult'>
+                                    <span class='checkmark'></span>
+                                  </label>
+                                  <label class='container'>Extremely Difficult
+                                    <input type='radio' name='ten' value='extremely difficult'>
+                                      <span class='checkmark'></span>
+                                    </label></div>
+<div class='11'>11)Which of the following population describes you?<br>
+  <label class="container1">Veteran or active duty military
+  <input type="checkbox" name='11a' value='veteran'>
+  <span class="checkmark1"></span>
+</label>
+
+<label class="container1">Caregiver of someone living with emotional or physical illness
+  <input type="checkbox" name='11b' value='caregiver'>
+  <span class="checkmark1"></span>
+</label>
+
+<label class="container1">LGBTQ
+  <input type="checkbox" name='11c' value='lgbtq'>
+  <span class="checkmark1"></span>
+</label>
+
+<label class="container1">Student
+  <input type="checkbox" name='11d' value='student'>
+  <span class="checkmark1"></span>
+</label>
+<label class="container1">Trauma Survivor
+  <input type="checkbox" name='11e' value='trauma'>
+  <span class="checkmark1"></span>
+</label>
+<label class="container1">New or expecting mother
+  <input type="checkbox" name='11f' value='new'>
+  <span class="checkmark1"></span>
+</label></div>
+<div class='12'>12)Do you have any of the following health diseases?
+  <label class="container1">Heart disease
+  <input type="checkbox" name='12a' value='heart'>
+  <span class="checkmark1"></span>
+  </label>
+
+  <label class="container1">Diabetes
+  <input type="checkbox" name='12b' value='diabetes'>
+  <span class="checkmark1"></span>
+  </label>
+
+  <label class="container1">Cancer
+  <input type="checkbox" name='12c' value='cancer'>
+  <span class="checkmark1"></span>
+  </label>
+
+  <label class="container1">Arthritis or other chronic pain
+  <input type="checkbox" name='12d' value='arthritis'>
+  <span class="checkmark1"></span>
+  </label>
+  <label class="container1">COPD or other lung conditions
+  <input type="checkbox" name='12e' value='copd'>
+  <span class="checkmark1"></span>
+  </label>
+  <label class="container1">Other
+  <input type="checkbox" name='12f' value='Other'>
+  <span class="checkmark1"></span>
+  </label></div>
+</div></form>
+
+</body>
+</html>

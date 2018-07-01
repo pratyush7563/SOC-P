@@ -1,0 +1,274 @@
+<html>
+<head>
+  <title> Healthy Living Style</title>
+
+  <script type = "text/javascript">
+           function displayNextImage() {
+               x = (x === images.length - 1) ? 0 : x + 1;
+               document.getElementById("img").src = images[x];
+           }
+
+           function displayPreviousImage() {
+               x = (x <= 0) ? images.length - 1 : x - 1;
+               document.getElementById("img").src = images[x];
+           }
+           function displayNextImage1(){
+             x1 = (x1 === images1.length - 1) ? 0 : x1 + 1;
+             document.getElementById("img1").src = images1[x1];
+           }
+           function displayPreviousImage1(){
+             x1=(x1<=0)?images1.length-1:x1-1;
+            document.getElementById("img1").src=images1[x1];
+          }
+          function displayNextImage2(){
+            x2 = (x2 === images2.length - 1) ? 0 : x2 + 1;
+            document.getElementById("img2").src = images2[x2];
+          }
+          function displayPreviousImage2(){
+            x2 = (x2 <= 0) ? images2.length - 1 : x2 - 1;
+            document.getElementById("img2").src = images2[x2];
+          }
+          function displayNextImage3(){
+            x3 = (x3 === images3.length - 1) ? 0 : x3 + 1;
+            document.getElementById("img3").src = images3[x3];
+          }
+          function displayPreviousImage3(){
+            x3 = (x3 <= 0) ? images3.length - 1 : x3 - 1;
+            document.getElementById("img3").src = images3[x3];
+          }
+
+           function startTimer() {
+               setInterval(displayNextImage, 3000);
+               setInterval(displayNextImage1,3000);
+               setInterval(displayNextImage2,3000);
+               setInterval(displayNextImage3,3000);
+           }
+
+           var images = [], x = -1,x1=-1,x2=-1,x3=-1;
+           images[0] = "confi2.jpg";
+           images[1] = "confi3.jpg";
+           images[2] = "confi.jpg";
+           var images1=[];
+           images1[0]="b+2.jpg";
+           images1[1]="b+3.png";
+           images1[2]="b+.jpg";
+           var images2=[];
+           images2[0]="smoke2.jpg";
+           images2[1]="smoke3.jpg";
+           images2[2]="smoke.jpg";
+           var images3=[];
+           images3[0]="sleep2.jpg";
+           images3[1]="sleep3.png";
+           images3[2]="sleep.jpg";
+
+           function toggle_visibility(id)
+           {
+             var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+           }
+       </script>
+<style>
+.header{
+    text-align:center;
+    color:white;
+    text-shadow: 4px 4px black;
+    padding:20px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right,#660066 0%,#669985 100%);
+    background-blend-mode:normal;
+    text-transform: capitalize;
+    position:sticky;
+    top:0px;
+  }
+
+.topnav  {
+    list-style-type: none;
+
+    width: 15%;
+    background-color: pink;
+    position: fixed;
+
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;}
+
+    .btn{
+      width:100%;
+      background-color:pink;
+      display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav button:hover:not(.active) {
+    background-color:#e34363 ;
+    color: white;
+}
+.active{
+  background-color:#e34363;
+  color:white;
+}
+.con{
+  margin-left: 16%;
+  font-style:oblique;
+  color:#5959ff;
+}
+.row1{
+  margin-left:55%;
+  margin-top:-32.28%;
+}
+.con1{
+  font-style:oblique;
+  color:#5959ff;
+}
+.row2{
+  margin-left:16%;
+  margin-top:6%;
+}
+.con2{
+  font-style:oblique;
+  color:#5959ff;
+}
+.row3{
+  margin-left:55%;
+    margin-top:-32.28%;
+}
+.con3{
+  font-style:oblique;
+  color:#5959ff;
+}
+.social{
+  margin-left:15.5%;
+  margin-top:6%;
+  font-size:20px;
+  font-style:oblique;
+  color:#669985;
+}
+.parallax1{
+  background: url('social.jpeg') no-repeat center;
+  background-size:cover;
+  background-attachment: fixed;
+  height:25%;
+  color:yellow;
+  text-align: center;
+  padding:5%;
+  font-size: 30px;
+}
+
+}
+</style>
+
+</head>
+<body onload='startTimer()'>
+  <div class='header' >
+    <h1> Want to lead a happy life? </h1>
+  </div>
+  <div class='topnav'id='myDIV'>
+    <a href='#'><button class='btn active'>Home</button></a>
+    <a href='#social_media'> <button class='btn'>Effects of Social Media</button></a>
+    <a href='#'><button class='btn'>Parenting Advices</button></a>
+    <a href='#'><button class='btn'> Physical Fitness</button></a>
+    <a href='#'><button class='btn'> Food habits</button></a>
+  </div>
+  <script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+&nbsp&nbsp&nbsp<div class='row'><div class='con' >
+ <img id='img' style='width:400px;height:300px' src='confi.jpg'>
+
+</div>
+
+<div class='con'>
+  <button  onclick="displayPreviousImage()" style='width:2%;height:4%;color:white;background-color:pink;'><</button>
+  <button  onclick='displayNextImage()' style='width:2%;height:4%;color:white;background-color:pink;'>></button><br>
+  <h2> Be Confident</h2>
+  <p> <ul>
+    <li> Being your best during stress </li>
+    <li> Good Leadership Skills</li>
+    <li> More Positive Attitude</li>
+    <li> Rising to the top </li>
+  </ul>
+</p>
+</div>
+</div>
+<div class='row1'><div class='con1'>
+<img id='img1' style='width:400px;height:300px;' src='b+.jpg'>
+</div>
+<div class='con1'>
+<button onclick="displayPreviousImage1()" style='width:4%;height:4%;color:white;background-color:pink;'><</button>
+<button onclick="displayNextImage1()" style='width:4%;height:4%;color:white;background-color:pink;'>></button><br>
+<h2> Be Positive</h2>
+<p><ul>
+  <li> lower rates of depression</li>
+  <li> Better psychological and physical well-being</li>
+  <li> lower levels of distress </li>
+  <li> Better coping skills during hardships </li>
+</ul></p>
+</div></div>
+<div class='row2'><div class='con2'>
+  <img id='img2' style='width:400px;height:300px;' src='smoke.jpg'>
+</div>
+<div class='con2'>
+  <button  onclick="displayPreviousImage2()" style='width:2%;height:4%;color:white;background-color:pink;'><</button>
+  <button  onclick="displayNextImage2()" style='width:2%;height:4%;color:white;background-color:pink;'>></button><br>
+<h2> Quit Smoking!</h2>
+  <p><ul>
+    <li>Reduces the risk of lung cancer and heart attack</li>
+    <li>Breathing becomes easier</li>
+    <li> Your senses improve</li>
+    <li> You reduce the risk of people dying due to passive smoking</li>
+  </ul></p>
+</div></div>
+<div class='row3'><div class='con3'>
+  <img id='img3' style='width:400px;height:300px;' src='sleep.jpg'>
+</div>
+<div class='con3'>
+<button onclick="displayPreviousImage3()" style='width:4%;height:4%;color:white;background-color:pink;'><</button>
+<button  onclick="displayNextImage3()" style='width:4%;height:4%;color:white;background-color:pink;'>></button><br>
+<h2> Sleep Early and Sufficiently</h2>
+<p><ul>
+  <li> Memory Improves</li>
+  <li> Live Longer</li>
+  <li>Lower Stress</li>
+  <li> Sharpen Attention</li>
+</ul>
+</p>
+</div></div>
+<div id='social_media' class='social'>
+<div class='parallax1'>
+  <h1> Effects Of Social Media</h1>
+</div>
+<button  class='bton' style='width:18%;height:6%;color:black;background-color:pink;  ' onclick="toggle_visibility('commu');"><b>Effects on communication</b></button>
+<div id='commu'>
+<p align='justify'>
+One of the most obvious negative aspects of social networking is losing face-to-face interactions with other people.
+Teens are sitting around with their gadgets in their hands all day long, tapping messages onto screens instead of communicating with real people.
+Many children feel more comfortable with virtual friends than with real ones.</p><p align='justify'>
+The time teens are spending on texting and online communication means they are missing out on developing critical social skills.
+By communicating mostly through a media site, they are not learning how to read body language, facial expressions, or vocal inflections.
+They may not even be able to formulate a response in real time when interacting with people.
+Which also leads to the fact that they won't be able to convey thier feelings effectively.
+This creates communication gap thereby creating casees of irritaion,intolerance,lack of confidence and frustation of not able to convey one's thoughts.</p>
+<p align='justify'>Communicating through a screen also removes the more personal and intimidating aspects of human interaction.
+ It's easier to keep your guard up with a text and you can't immediately see how your words are having an effect on someone.
+Some teens now say that talking over the phone is too intense because it is too direct.</p>
+<p align='justify'> Anxiety over the basic act of talking can lead to problems later in life as social negotiations become more complex with employment.
+Teen nowadays judge themselves on the basis on the likes they get.
+Nowadays for teens opinions of other people matter so much that it creates a tendency to present oneself as someone who will be appreciated by all.
+This leads to dissatisfaction and poor self image which ultimately leads to mental problems.</p>
+</div></div></body>
+</html>

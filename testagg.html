@@ -1,0 +1,479 @@
+<html>
+<head>
+	<title>
+		 Test aggression
+	</title>
+	<style>
+	body {
+
+			background-image: linear-gradient(to top,#ffe0cc 0%,white 100%);
+			background-blend-mode: normal;
+	}
+.header{
+	animation: change 5s infinite;
+	text-align: center;
+	height:20%;
+	width:100%;
+	font-size: 30px;
+	padding-top: 0.5%;
+	font-style: oblique;
+}
+@keyframes change {
+	0%{background-color: #667d52;}
+	25%{background-color: #995299;}
+	50%{background-color: #993dff;}
+	75%{background-color: #5959ff;}
+	100%{background-color: #667d52; }
+
+}
+.questions{
+	font-size:25px;
+	font-style: oblique;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+
+
+}
+
+/* Hide the browser's default radio button */
+.container input {
+
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+</style>
+</head>
+<body>
+	<div class='header'>
+		<h1> ANSWER THE FOLLOWING </h1>
+  </div><form>
+	<div class='questions'>
+		<div class='1'>1. If someone ask me to do a favor that I’m reluctant to do, I say “Yes” when I really mean “No”<br>
+			<label class='container'>Yes
+				<input type='radio' name='one' value='yes'>
+		    <span class='checkmark'></span>
+		  </label>
+			<label class='container'>No
+				<input type='radio' name='one' value='no'>
+		    <span class='checkmark'></span>
+		  </label>
+		</div>
+		<div class='2'>2. When I disagree with something I openly voice my opinion about it.<br>
+			<label class='container'>Yes
+				<input type='radio' name='two' value='yes'>
+		    <span class='checkmark'></span>
+		  </label>
+			<label class='container'>No
+				<input type='radio' name='two' value='no'>
+		    <span class='checkmark'></span>
+		  </label>
+		</div>
+		<div class='3'>3. Other people treat me unfairly.<br>
+			<label class='container'>Yes
+				<input type='radio' name='three' value='yes'>
+		    <span class='checkmark'></span>
+		  </label>
+			<label class='container'>No
+				<input type='radio' name='three' value='no'>
+		    <span class='checkmark'></span>
+		  </label>
+		</div>
+		<div class='4'>4. People complain about my failure to meet deadlines even if I provide them with good reasons for the delays<br>
+			<label class='container'>Yes
+				<input type='radio' name='four' value='yes'>
+		    <span class='checkmark'></span>
+		  </label>
+			<label class='container'>No
+				<input type='radio' name='four' value='no'>
+		    <span class='checkmark'></span>
+		  </label>
+		</div>
+		<div class='5'>5. If I’m required to do the work that I’m unwilling to do, I deliberately do it poorly in order to not be asked again<br>
+			<label class='container'>Yes
+				<input type='radio' name='five' value='yes'>
+		    <span class='checkmark'></span>
+		  </label>
+			<label class='container'>No
+				<input type='radio' name='five' value='no'>
+		    <span class='checkmark'></span>
+		  </label>
+		</div>
+		<div class='6'>6. I try not to make any clear promises to other people in order to avoid unnecessary responsibilities<br>
+			<label class='container'>Yes
+				<input type='radio' name='six' value='yes'>
+		    <span class='checkmark'></span>
+		  </label>
+			<label class='container'>No
+				<input type='radio' name='six' value='no'>
+		    <span class='checkmark'></span>
+		  </label>
+		</div>
+		<div class='7'>7. I’m late to meetings<br>
+			<label class='container'>Yes
+				<input type='radio' name='seven' value='yes'>
+		    <span class='checkmark'></span>
+		  </label>
+			<label class='container'>No
+				<input type='radio' name='seven' value='no'>
+		    <span class='checkmark'></span>
+		  </label>
+		</div>
+		<div class='8'>8. People consider me an absentminded person<br>
+			<label class='container'>Yes
+				<input type='radio' name='eight' value='yes'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>No
+				<input type='radio' name='eight' value='no'>
+				<span class='checkmark'></span>
+			</label>
+		</div>
+		<div  class='9'>9. People are too demanding or needy<br>
+			<label class='container'>Yes
+				<input type='radio' name='nine' value='yes'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>No
+				<input type='radio' name='nine' value='no'>
+				<span class='checkmark'></span>
+			</label>
+		</div>
+		<div class='10'>10. If I have an argument with a close one, I use “the silence treatment” where I give very little if any response<br>
+			<label class='container'>Yes
+				<input type='radio' name='ten' value='yes'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>No
+				<input type='radio' name='ten' value='no'>
+				<span class='checkmark'></span>
+			</label>
+		</div>
+		<div class='11'>11. People underestimate me.<br>
+			<label class='container'>Yes
+				<input type='radio' name='eleven' value='yes'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>No
+				<input type='radio' name='eleven' value='no'>
+				<span class='checkmark'></span>
+			</label>
+		</div>
+		<div class='12'>12. Even if I definitely know that I’m in the wrong, I avoid admitting my fault to other people.<br>
+			<label class='container'>Yes
+				<input type='radio' name='twelve' value='yes'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>No
+				<input type='radio' name='twelve' value='no'>
+				<span class='checkmark'></span>
+			</label>
+		</div>
+		<div class='13'>13. I feel a need to resist authority over me.<br>
+			<label class='container'>Yes
+				<input type='radio' name='thirteen' value='yes'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>No
+				<input type='radio' name='thirteen' value='no'>
+				<span class='checkmark'></span>
+			</label>
+		</div>
+		<div class='14'>14. I fear that I’m inadequate.<br>
+			<label class='container'>Yes
+				<input type='radio' name='fourteen' value='yes'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>No
+				<input type='radio' name='fourteen' value='no'>
+				<span class='checkmark'></span>
+			</label>
+		</div>
+		<div class='15'>15. You overhear a friend badmouthing you. How angry does that make you feel?<br>
+			<label class='container'>I don't feel angry at all
+				<input type='radio' name='fifteen' value='i donot feel angry at all'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel slightly annoyed
+				<input type='radio' name='fifteen' value='i feel slightly annoyed'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel little angry
+				<input type='radio' name='fifteen' value='i feel little angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel moderately angry
+				<input type='radio' name='fifteen' value='i feel moderately angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel very angry
+				<input type='radio' name='fifteen' value='i feel very angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel furious
+				<input type='radio' name='fifteen' value='i feel furious'>
+				<span class='checkmark'></span>
+			</label>
+
+
+		</div>
+		<div class='16'>16. Your friend persuades you to hire her/his cousin for a moving job. The guy turns out to be pretty clumsy – he even manages to drop a box labeled “fragile”, shattering your valuable wine glasses into hundreds of pieces. How angry does that make you feel?<br>
+			<label class='container'>I don't feel angry at all
+				<input type='radio' name='sixteen' value='i donot feel angry at all'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel slightly annoyed
+				<input type='radio' name='sixteen' value='i feel slightly annoyed'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel little angry
+				<input type='radio' name='sixteen' value='i feel little angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel moderately angry
+				<input type='radio' name='sixteen' value='i feel moderately angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel very angry
+				<input type='radio' name='sixteen' value='i feel very angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel furious
+				<input type='radio' name='sixteen' value='i feel furious'>
+				<span class='checkmark'></span>
+			</label>
+		</div>
+		<div class='17'>17. You have agreed to pick up some friends at the train station. They are coming to stay with you for a month, and they are not light travelers! You've arranged with your partner to have the car for the day. You are about to leave the house when you realize the car is outside but your partner has gone to work with the keys. How angry does that make you feel?<br>
+			<label class='container'>I don't feel angry at all
+				<input type='radio' name='seventeen' value='i donot feel angry at all'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel slightly annoyed
+				<input type='radio' name='seventeen' value='i feel slightly annoyed'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel little angry
+				<input type='radio' name='seventeen' value='i feel little angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel moderately angry
+				<input type='radio' name='seventeen' value='i feel moderately angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel very angry
+				<input type='radio' name='seventeen' value='i feel very angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel furious
+				<input type='radio' name='seventeen' value='i feel furious'>
+				<span class='checkmark'></span>
+			</label>
+		</div>
+		<div class='18'>18. At a karaoke night with friends, your partner pokes fun at your singing in front of your friends. You thought your voice was pretty good, but it looks like your so-called better half thinks you deserve two thumbs down. How angry does that make you feel?<br>
+			<label class='container'>I don't feel angry at all
+				<input type='radio' name='eighteen' value='i donot feel angry at all'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel slightly annoyed
+				<input type='radio' name='eighteen' value='i feel slightly annoyed'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel little angry
+				<input type='radio' name='eighteen' value='i feel little angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel moderately angry
+				<input type='radio' name='eighteen' value='i feel moderately angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel very angry
+				<input type='radio' name='eighteen' value='i feel very angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel furious
+				<input type='radio' name='eighteen' value='i feel furious'>
+				<span class='checkmark'></span>
+			</label>
+		</div>
+		<div class='19'>19. You've planted a garden in your backyard and are looking forward to reaping the fruit of your efforts. One day, you catch the neighbor's dog in action. With what looks like a delighted expression on his face, he lifts his leg and “waters” your plants. Your garden is ruined - who would want to eat contaminated produce? How angry does that make you feel?<br>
+			<label class='container'>I don't feel angry at all
+				<input type='radio' name='nineteen' value='i donot feel angry at all'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel slightly annoyed
+				<input type='radio' name='nineteen' value='i feel slightly annoyed'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel little angry
+				<input type='radio' name='nineteen' value='i feel little angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel moderately angry
+				<input type='radio' name='nineteen' value='i feel moderately angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel very angry
+				<input type='radio' name='nineteen' value='i feel very angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel furious
+				<input type='radio' name='nineteen' value='i feel furious'>
+				<span class='checkmark'></span>
+			</label>
+		</div>
+		<div class='20'>20. On your way home from work you stop at the bank to deposit a check. As you're standing in line patiently waiting your turn, you notice a little kid with a chocolate bar running around screaming. His mom seems to have no problem with it; she's actually beaming with pride! Next thing you know, the kid decides to run over to you and give you a big hug, smearing little chocolate handprints all over your pants. How angry does that make you feel?<br>
+			<label class='container'>I don't feel angry at all
+				<input type='radio' name='twenty' value='i donot feel angry at all'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel slightly annoyed
+				<input type='radio' name='twenty' value='i feel slightly annoyed'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel little angry
+				<input type='radio' name='twenty' value='i feel little angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel moderately angry
+				<input type='radio' name='twenty' value='i feel moderately angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel very angry
+				<input type='radio' name='twenty' value='i feel very angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel furious
+				<input type='radio' name='twenty' value='i feel furious'>
+				<span class='checkmark'></span>
+			</label>
+		</div>
+		<div class='21'>21. You and a friend decide to catch a weekend matinée. You're getting drawn into the story but the guy behind you keeps bumping the back of your seat whenever he changes position...and he seems to be getting more restless as the movie progresses. How angry does that make you feel?<br>
+			<label class='container'>I don't feel angry at all
+				<input type='radio' name='twenty_one' value='i donot feel angry at all'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel slightly annoyed
+				<input type='radio' name='twenty_one' value='i feel slightly annoyed'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel little angry
+				<input type='radio' name='twenty_one' value='i feel little angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel moderately angry
+				<input type='radio' name='twenty_one' value='i feel moderately angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel very angry
+				<input type='radio' name='twenty_one' value='i feel very angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel furious
+				<input type='radio' name='twenty_one' value='i feel furious'>
+				<span class='checkmark'></span>
+			</label>
+		</div>
+		<div class='22'>22. You are on your way home from a grueling conference. Your ticket states you have a direct flight home and should be landing at 7 p.m. You board your plane and, as soon as you're buckled in, there is an announcement that the flight has been re-routed. There will be an hour layover at another airport. Once you're on the ground for the layover however, the pilot comes back on the intercom and announces that the wait will be significantly longer than initially expected – 6 hours! How angry does that make you feel?<br>
+			<label class='container'>I don't feel angry at all
+				<input type='radio' name='twenty_two' value='i donot feel angry at all'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel slightly annoyed
+				<input type='radio' name='twenty_two' value='i feel slightly annoyed'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel little angry
+				<input type='radio' name='twenty_two' value='i feel little angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel moderately angry
+				<input type='radio' name='twenty_two' value='i feel moderately angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel very angry
+				<input type='radio' name='twenty_two' value='i feel very angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel furious
+				<input type='radio' name='twenty_two' value='i feel furious'>
+				<span class='checkmark'></span>
+			</label>
+		</div>
+		<div class='23'>23. You just left your mother's house following one of your semi-regular arguments. This time she said some things that hit below the belt and really hurt. You know this type of disagreement with her typically dissolves within a week, but what she said was pretty nasty (even if she didn't mean it)! How angry does that make you feel?<br>
+			<label class='container'>I don't feel angry at all
+				<input type='radio' name='twenty_three' value='i donot feel angry at all'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel slightly annoyed
+				<input type='radio' name='twenty_three' value='i feel slightly annoyed'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel little angry
+				<input type='radio' name='twenty_three' value='i feel little angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel moderately angry
+				<input type='radio' name='twenty_three' value='i feel moderately angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel very angry
+				<input type='radio' name='twenty_three' value='i feel very angry'>
+				<span class='checkmark'></span>
+			</label>
+			<label class='container'>I feel furious
+				<input type='radio' name='twenty_three' value='i feel furious'>
+				<span class='checkmark'></span>
+			</label>
+		</div>
+	</div>
+<input type='submit' value='Submit'></form>
+</body>
+</html>

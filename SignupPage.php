@@ -148,7 +148,7 @@ title="Must contain at least one number and one uppercase and lowercase letter, 
 
 <button class="but" style="background-color:#008000;" type="submit" value="submit" align="right" >Submit</button><br><br>
 <div class="container" >
-      <button type="reset" class="but" onclick="homepage.php" class="cancelbtn">Cancel</button><br><br>
+      <button type="reset" class="but" onclick="window.location='homep.php';" class="cancelbtn">Cancel</button><br><br>
 
     </div>
 
